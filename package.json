@@ -19,6 +19,7 @@
   "homepage": "https://github.com/thienhiep1711/node-chat-app#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
   }
 }
