@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
+    "test": "mocha server/**/*.test.js",
+    "start": "node server/server.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,11 @@
   "homepage": "https://github.com/thienhiep1711/node-chat-app#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "mocha": "^6.0.2",
     "path": "^0.12.7",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "expect": "^24.5.0"
   }
 }
